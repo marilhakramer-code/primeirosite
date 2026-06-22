@@ -22,15 +22,19 @@
             compartilhar dicas com você!
         </p>
         <button>❤️<span>0</span></button>
+         <button>😶​​<span>0</span></button>
+          <button>👎​<span>0</span></button>
     </main>
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
     function botaoClicado() {
         let texto = botao.querySelector("span");
         texto.textContent++;
-    }
+        }
+    })
 </script>
 
 </html>
